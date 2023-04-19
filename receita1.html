@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://file.myfontastic.com/EHCSvk3DqvLAwo54FAuCwN/icons.css" rel="stylesheet">
+  <title>Receita n°1</title>
+</head>
+
+<body>
+  <a class="indexMenu" href="./index.html">Index</a>
+  <a class="indexMenu" href="./receita2.html">Receita 2</a>
+  <a class="indexMenu" href="./receita3.html">Receita 3</a>
+  <a class="indexMenu" href="./receita4.html">Receita 4</a>
+  <a class="indexMenu" href="./receita5.html">Receita 5</a>
+  <span class="headline">Como fazer um bolo inglês</span>
+  <span class="subheadline"><i class="icon-list"></i>Passo a passo</span>
+  <div class="imagem">
+    <img src="./pictures/livro_receita_1.jpg" alt="Bolo Inglês">
+  </div>
+
+  <button id="toggle-recipes-btn">Mostrar Igredientes</button>
+
+  <div id="recipes-section" style="display: none;">
+    <script>
+      const toggleRecipesBtn = document.getElementById("toggle-recipes-btn");
+      const recipesSection = document.getElementById("recipes-section");
+
+      toggleRecipesBtn.addEventListener("click", function () {
+        if (recipesSection.style.display === "none") {
+          recipesSection.style.display = "block";
+          toggleRecipesBtn.innerHTML = "Esconder Igredientes";
+        } else {
+          recipesSection.style.display = "none";
+          toggleRecipesBtn.innerHTML = "Mostrar Igredientes";
+        }
+      });
+    </script>
+
+
+    <li class="lista">250 g de manteiga</li>
+    <li class="lista">250 g de açúcar</li>
+    <li class="lista">4 ovos (claras separadas)</li>
+    <li class="lista">250 g de farinha de trigo</li>
+    <li class="lista">Essências de sua preferência ou frutas cristalizadas</li>
+
+  </div>
+
+  <div class="container">
+
+    <button id="passo-a-passo">Mostrar Passo a Passo</button>
+
+    <div id="pass-to-pass" style="display: none;">
+      <script>
+        const togglePassBtn = document.getElementById("passo-a-passo");
+        const passSection = document.getElementById("pass-to-pass");
+
+        togglePassBtn.addEventListener("click", function () {
+          if (passSection.style.display === "none") {
+            passSection.style.display = "block";
+            togglePassBtn.innerHTML = "Esconder Passo a Passo";
+          } else {
+            passSection.style.display = "none";
+            togglePassBtn.innerHTML = "Mostrar Passo a Passo";
+          }
+        });
+      </script>
+
+
+      <li class="lista2">Na vasilha da batedeira, coloque a manteiga (temperatura ambiente e sem sal) e as gemas.
+      </li>
+      <li class="lista2">Bata até obter um creme esbranquiçado e homogêneo.</li>
+      <li class="lista2">Desligue</li>
+      <li class="lista2">Junte o açúcar e bata novamente.</li>
+      <li class="lista2">Desligue</li>
+      <li class="lista2">Adicione essências de sua preferência (laranja, limão, abacaxi) ou as frutas
+        cristalizadas e a farinha.</li>
+      <li class="lista2">Misture a cada ingrediente adicionado e a seguir bata.</li>
+      <li class="lista2">Desligue</li>
+      <li class="lista2">Agregue as claras em neve aos poucos e delicadamente.</li>
+      <li class="lista2">Mexa de baixo para cima, bem delicado, sem bater.</li>
+      <li class="lista2">A massa tem que ficar bem leve.</li>
+      <li class="lista2">Coloque em assadeira própria para bolo inglês, untada e polvilhada com farinha.</li>
+      <li class="lista2">Leve ao forno pré-aquecido, de 180° a 200°, por 20 a 25 minutos.</li>
+
+    </div>
+  </div>
+</body>
+
+</html>

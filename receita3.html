@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://file.myfontastic.com/EHCSvk3DqvLAwo54FAuCwN/icons.css" rel="stylesheet">
+  <title>Receita n°3</title>
+</head>
+
+<body>
+  <a class="indexMenu" href="./index.html">Index</a>
+  <a class="indexMenu" href="./receita1.html">Receita 1</a>
+  <a class="indexMenu" href="./receita2.html">Receita 2</a>
+  <a class="indexMenu" href="./receita4.html">Receita 4</a>
+  <a class="indexMenu" href="./receita5.html">Receita 5</a>
+  <span class="headline">MACARRÃO COM REQUEIJÃO</span>
+  <span class="subheadline"><i class="icon-list"></i>Passo a passo</span>
+  <div class="imagem">
+    <img src="./pictures/livro_receita_2.jpg" alt="Macarrão com Requeijão">
+  </div>
+
+  <button id="toggle-recipes-btn">Mostrar Igredientes</button>
+
+  <div id="recipes-section" style="display: none;">
+    <script>
+      const toggleRecipesBtn = document.getElementById("toggle-recipes-btn");
+      const recipesSection = document.getElementById("recipes-section");
+
+      toggleRecipesBtn.addEventListener("click", function () {
+        if (recipesSection.style.display === "none") {
+          recipesSection.style.display = "block";
+          toggleRecipesBtn.innerHTML = "Esconder Igredientes";
+        } else {
+          recipesSection.style.display = "none";
+          toggleRecipesBtn.innerHTML = "Mostrar Igredientes";
+        }
+      });
+    </script>
+
+
+    <li class="lista">500 g de penne cozido al dente</li>
+    <li class="lista">2 colheres (sopa) de azeite</li>
+    <li class="lista">2 dentes de alho picados</li>
+    <li class="lista">1 lata de molho de tomate</li>
+    <li class="lista">200 g de requeijão de sua preferência</li>
+    <li class="lista">1 lata de creme de leite</li>
+    <li class="lista">300 g de presunto picado</li>
+    <li class="lista">300 g de mussarela picada</li>
+    <li class="lista">Queijo parmesão ralado</li>
+    <li class="lista">Sal e pimenta a gosto</li>
+
+  </div>
+
+  <div class="container">
+
+    <button id="passo-a-passo">Mostrar Passo a Passo</button>
+
+    <div id="pass-to-pass" style="display: none;">
+      <script>
+        const togglePassBtn = document.getElementById("passo-a-passo");
+        const passSection = document.getElementById("pass-to-pass");
+
+        togglePassBtn.addEventListener("click", function () {
+          if (passSection.style.display === "none") {
+            passSection.style.display = "block";
+            togglePassBtn.innerHTML = "Esconder Passo a Passo";
+          } else {
+            passSection.style.display = "none";
+            togglePassBtn.innerHTML = "Mostrar Passo a Passo";
+          }
+        });
+      </script>
+
+
+      <li class="lista2">Em uma panela aqueça o azeite e doure o alho.</li>
+      <li class="lista2">Junte o molho de tomate, o requeijão e o creme de leite.</li>
+      <li class="lista2">Tempere com sal e pimenta.</li>
+      <li class="lista2">Deixe no fogo brando até o requeijão derreter.</li>
+      <li class="lista2">Desligue o fogo e misture a mussarela e o presunto picados.</li>
+      <li class="lista2">Em um refratário coloque o macarrão, despeje o molho e polvilhe o queijo ralado.</li>
+      <li class="lista2">Deixe por 20 minutos em forno pré-aquecido.</li>
+      <li class="lista2">Sirva em seguida.</li>
+
+    </div>
+  </div>
+</body>
+
+</html>

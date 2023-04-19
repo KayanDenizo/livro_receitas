@@ -1,0 +1,236 @@
+* {
+    background-color: #000;
+}
+
+.headline {
+    color: #fbfbfb;
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    border-right: .15em solid #000;
+    font-size: 30px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.subheadline {
+    color: #fbfbfb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.container {
+    display: block;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #4CAF50;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #fbfbfb;
+    color: #000;
+    transition: 0.5s;
+}
+
+.lista {
+    font-size: 20px;
+    font-size: 20px;
+    color: #fbfbfb;
+    border-radius: 40px;
+    background-color: #666;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.imagem img {
+    border-radius: 25%;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.5;
+}
+
+.li {
+    list-style-type: circle;
+}
+
+i {
+    display: inline-block;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.lista2 {
+    list-style-type: decimal;
+    font-size: 20px;
+    color: #fbfbfb;
+    border-radius: 40px;
+    background-color: #666;
+}
+
+.indexMenu {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: #666;
+    border-radius: 40px;
+    margin: 4px 2px;
+    padding: 10px;
+}
+
+.indexMenu:hover{
+    background-color: #fbfbfb;
+    transition: 0.5s;
+    color: #000;
+}
+
+.top {
+    color: #fff;
+    text-align: center;
+}
+
+.container2{
+padding-left: 200px;
+}
+
+.menu {
+    display: inline-block;
+    /* exibe os links em uma linha */
+    margin: 0 10px;
+    /* adiciona espaçamento igual nos lados do link */
+    text-align: center;
+    /* centraliza o texto dentro do link */
+    background-color: #666;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.menu:hover {
+    background-color: #fbfbfb;
+    color: #000;
+    transition: 0.5s;
+}
+
+.container2{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 > a:last-child {
+    margin-top: auto;
+  }
+
+.livroMagico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.livroMagico img {
+    border-radius: 25%;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.5;
+}
+
+.ing{
+    background-color: #6e6e6e;
+    list-style: circle;
+    color: white;
+    font-size: 20px
+}
+
+.raw {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+.raw2 {
+    text-align: center;
+    color: white;
+    font-weight: 200;
+}
+
+.suspiro {
+    text-align: center;
+}
+
+.ing2 {
+    background-color: #6e6e6e;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.link2 {
+    background-color: gray;
+    width: 300px;
+    height: 150px;
+    text-decoration-color: white;
+    font-size: 1.6em;
+}
+
+.op {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+.op2 {
+    text-align: center;
+    color: white;
+    font-weight: 200;
+}
+
+.panqueca {
+    text-align: center;
+}
+
+.pan {
+    background-color: #6e6e6e;
+    list-style: circle;
+    color: white;
+    font-size: 20px
+}
+
+.pan2 {
+    background-color: #6e6e6e;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.fundo2 {
+    background-color: gray;
+}

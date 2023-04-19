@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://file.myfontastic.com/EHCSvk3DqvLAwo54FAuCwN/icons.css" rel="stylesheet">
+  <title>Receita n°5</title>
+</head>
+
+<body>
+  <a class="indexMenu" href="./index.html">Index</a>
+  <a class="indexMenu" href="./receita1.html">Receita 1</a>
+  <a class="indexMenu" href="./receita2.html">Receita 2</a>
+  <a class="indexMenu" href="./receita3.html">Receita 3</a>
+  <a class="indexMenu" href="./receita4.html">Receita 4</a>
+  <span class="headline">Café Cremoso</span>
+  <span class="subheadline"><i class="icon-list"></i>Passo a passo</span>
+  <div class="imagem">
+    <img src="./pictures/livro_receita_3.jpg" alt="Macarrão com Requeijão">
+  </div>
+
+  <button id="toggle-recipes-btn">Mostrar Igredientes</button>
+
+  <div id="recipes-section" style="display: none;">
+    <script>
+      const toggleRecipesBtn = document.getElementById("toggle-recipes-btn");
+      const recipesSection = document.getElementById("recipes-section");
+
+      toggleRecipesBtn.addEventListener("click", function () {
+        if (recipesSection.style.display === "none") {
+          recipesSection.style.display = "block";
+          toggleRecipesBtn.innerHTML = "Esconder Igredientes";
+        } else {
+          recipesSection.style.display = "none";
+          toggleRecipesBtn.innerHTML = "Mostrar Igredientes";
+        }
+      });
+    </script>
+
+
+    <li class="lista">50 g de café solúvel</li>
+    <li class="lista">2 xícaras de açúcar refinado</li>
+    <li class="lista">1 xícara de água</li>
+  </div>
+
+  <div class="container">
+
+    <button id="passo-a-passo">Mostrar Passo a Passo</button>
+
+    <div id="pass-to-pass" style="display: none;">
+      <script>
+        const togglePassBtn = document.getElementById("passo-a-passo");
+        const passSection = document.getElementById("pass-to-pass");
+
+        togglePassBtn.addEventListener("click", function () {
+          if (passSection.style.display === "none") {
+            passSection.style.display = "block";
+            togglePassBtn.innerHTML = "Esconder Passo a Passo";
+          } else {
+            passSection.style.display = "none";
+            togglePassBtn.innerHTML = "Mostrar Passo a Passo";
+          }
+        });
+      </script>
+
+
+      <li class="lista2">Junte todos os ingredientes e bata na batedeira durante 15 minutos até ficar um creme.</li>
+      <li class="lista2">Guarde no congelador em pote fechado.</li>
+      <li class="lista2">Este creme é para ser servido do seguinte modo: 1 colher de sobremesa em 1 xícara de café
+        quente (já pronto) ou 2 colheres de sobremesa em 1 xícara de leite fervendo.</li>
+      <li class="lista2">Está pronta uma deliciosa bebida cremosa para aquecer as noites frias de inverno.</li>
+    </div>
+  </div>
+</body>
+
+</html>
